@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<title>main.c</title>
+
+<style>
+body {	
+	background-color: black;
+	color: white;	
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	left:50%;
+    top:50%;
+	margin-left: -400px;
+	margin-top: -300px;
+	font-family: "Courier New";
+	font-size: 15px;
+	display: grid; 
+	grid-template-rows: 25px 8fr 100px; 
+	grid-template-columns: 25% 75%; 
+	grid-auto-flow: column; 
+}
+
+.headline {
+	color: lime;
+	font-size: 15px;
+	height: 30px;
+	grid-column: 2 / 2; 
+	grid-row: 1; 
+}
+
+.navbar {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	grid-column: 1 / 1; 
+	grid-row: 2; 
+}
+
+.container {
+	padding: 0px;
+	margin: 0px;
+	grid-column: 2 / 2; 
+	grid-row: 2; 
+}
+
+a {
+	color: fuchsia;
+	text-decoration: none;
+	
+}
+
+p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+}
+
+a:hover {
+	color: hotpink;
+}
+
+b {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	color: orange;
+}
+
+h3 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	color: lime;
+}
+</style>
+
+<head>
+	
+
+	<div class = "headline">
+		#include &ltintroduction.h&gt
+	</div>
+</head>
+
+<body>
+
+	<div class="navbar">
+	  <li><a href="index.html">res/main.c</a></li>
+	  <li><a href="projects.html">res/projects/</a></li>
+	</div>
+
+	<div class="container">
+		<br>
+		<h3>Introduction</h3>
+		<br>
+		<p>Hello everyone. My name is Nico. On this website you will find projects I am currently working on and things I am interested in.</p>
+		<p><br>You can navigate using the menu to the left. </p>
+	</div>
+</body>
+</html>

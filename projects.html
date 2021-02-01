@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<title>main.c</title>
+
+<style>
+body {	
+	background-color: black;
+	color: white;	
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	left:50%;
+    top:50%;
+	margin-left: -400px;
+	margin-top: -300px;
+	font-family: "Courier New";
+	font-size: 15px;
+	display: grid; 
+	grid-template-rows: 25px 8fr 100px; 
+	grid-template-columns: 25% 75%; 
+	grid-auto-flow: column; 
+}
+
+footer {
+	height: 200px;
+	grid-column: 2 / 2; 
+	grid-row: 3; 
+}
+
+.headline {
+	color: lime;
+	font-size: 15px;
+	height: 30px;
+	grid-column: 2 / 2; 
+	grid-row: 1; 
+}
+
+.navbar {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	grid-column: 1 / 1; 
+	grid-row: 2; 
+}
+
+.container {
+	padding: 0px;
+	margin: 0px;
+	grid-column: 2 / 2; 
+	grid-row: 2; 
+}
+
+a {
+	color: fuchsia;
+	text-decoration: none;
+	
+}
+
+p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+}
+
+b {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	color: orange;
+}
+
+h3 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 2;
+	color: lime;
+}
+
+a:hover {
+	color: hotpink;
+}
+
+img {
+	display: block;
+	height: auto;
+}
+
+</style>
+
+<head>
+	
+
+	<div class = "headline">
+		#include &ltnGine3D.h&gt
+	</div>
+</head>
+
+<body>
+
+	<div class="navbar">
+	  <li><a href="index.html">res/main.c</a></li>
+	  <li><a href="projects.html">res/projects/</a></li>
+	</div>
+
+	<div class="container">
+		<br>
+		<h3>nGine3D</h3>
+		<br>
+		<p>I am working on a 3D game engine. - <b>nGine3D!</b></p>
+		<img src="./img/grass.png" alt="terrain generator" width="100%">
+		<p>Here is a screenshot of a randomly generated plains terrain with grass ontop.</p>
+		<br>
+		<p>As it is still in an early state, things will change in the future. Hopefully for the better ;)</p>
+		<br>
+		<h3>SDK Tools</h3>
+		<br>
+		<p>The nGine will come with various SDK Tools. Currently under development is <b>nExus</b>, the Map Editor!</p>
+		<img src="./img/mapEditor.png" alt="nExus Map Editor" width="100%">
+		<p>The picture above shows the nExus Editor. Maps are saved in the custom file format <b>*.nwf</b> which stands
+		for nExus world file.</p>
+		<img src="./img/mapIngame.png" alt="nExus Map loaded into nGine3D" width="100%">
+		<p>As you can see, the nExus world file can be opened and displayed by the nGine. 
+		<br><br>Note that nExus and nGine are completely seperate programs and don't share any data
+		underneath the radar.<br><b>You are always in full control of your files.</b></p>
+		<br>
+		<h3>Further plans and updates</h3>
+		<br>
+		<p>nGine still has a very long way to go. All the pictures you see show the nGine <b>not even one week since 
+		development started.</b><br><br>The next big update will be collisions! I also plan on adding dynamic shadows,
+		a skeletal animation system and obviously further updates to nExus aswell.<br><br>Stay healthy!</p>
+	</div>
+</body>
+<footer>
+	<div><p>~Nico</p></div>
+</footer>
+
+</html>
